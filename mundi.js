@@ -161,7 +161,7 @@ function randomizador(bombo){
 
 
 function creaGrupo(grupo){
-    grupo.push(randomizador(bomboA));
+    grupo==grupoA?grupo.push(bomboA.splice(0,1)):grupo.push(randomizador(bomboA));
     grupo.push(randomizador(bomboB));
     grupo.push(randomizador(bomboC));
     grupo.push(randomizador(bomboD));
