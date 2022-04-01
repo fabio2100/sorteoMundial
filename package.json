@@ -1,0 +1,22 @@
+{
+  "name": "simuladorsorteomundial",
+  "version": "1.0.0",
+  "description": "Simulador del sorteo del mundial ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabio2100/sorteoMundial.git"
+  },
+  "author": "Fabio Squizzato",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fabio2100/sorteoMundial/issues"
+  },
+  "homepage": "https://github.com/fabio2100/sorteoMundial#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
