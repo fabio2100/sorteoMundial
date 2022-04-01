@@ -1,0 +1,1 @@
+Las restricciones por recursión fallan la mayoría de los casos, parece que se debe a que al intentar crear grupos nuevos en la mayoría de las veces, al intentar crear grupo por grupo no quedan equipos que no cumplan las restricciones
