@@ -184,15 +184,18 @@ function creaGruposMundial(){
     gruposJson.forEach(grupo => { 
         let federacion = [];  
         grupo.forEach(seleccion=>{
-            if(federacion.includes(seleccion.confederacion)){
-                //console.log('volviendo a realizar sorteo');
+            if(federacion.includes(seleccion[0].confederacion) && seleccion[0].confederacion !='UEFA'){
+                //console.log('fallo',federacion,seleccion);
                 creaGruposMundial();
             }else{
-                federacion.push(seleccion.confederacion)
+                //console.log('ingresa al else')
+                federacion.push(seleccion[0].confederacion)
             }
-        })
+            federacion.push(seleccion.confederacion)
+        });
+        //console.log(federacion)
     });
-
+    
     return gruposJson;    
 }
 
